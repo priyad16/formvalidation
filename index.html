@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="inner">
+        <div id="para">
+            <p><strong>Welcome to <span>CAT</span></strong></p>
+        </div>
+
+        <div id="form">
+            
+            <form method="post">
+                <label for="nam">Username</label><br>
+                <input type="text" id="nam" name="uname" placeholder="Username"><br>
+                <div id="nerr-msg" class="err"></div>
+                <label for="pw">Password</label><br>
+                <div id="par">
+                <input type="password" id="pw" name="pw" placeholder="Password"><br>
+                <div id="perr-msg" class="err"></div>
+                <i class="fa-regular fa-eye" id="eye"></i>
+                </div>
+                <button id="btn">Login</button>
+                <div id="err-msg" class="err succ"></div>
+            
+            </form>
+            
+        </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
