@@ -4,7 +4,7 @@ let btn=document.getElementById('btn');
 let emsg=document.getElementById('err-msg');
 let nemsg=document.getElementById('nerr-msg');
 let pemsg=document.getElementById('perr-msg');
-
+let inp=document.getElementsByClassName('focus');
 
 
 btn.addEventListener('click',(event)=>{
@@ -68,4 +68,14 @@ eye.addEventListener('click',()=>{
         eye.classList.add('fa-eye');
         isvis=false;
     }
-})
+});
+
+for(let i=0;i<inp.length;i++){
+inp[i].addEventListener('focus',function(){
+    this.classList.add('inp');
+});
+
+inp[i].addEventListener('blur',function(){
+    this.classList.remove('inp');
+});
+}

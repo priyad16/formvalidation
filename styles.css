@@ -100,3 +100,6 @@ span{
     margin-top: 2px;
     font-size: 0.8rem;
 }
+.inp{
+    border:1px solid blue;
+}
