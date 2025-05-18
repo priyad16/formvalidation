@@ -5,6 +5,11 @@ let emsg=document.getElementById('err-msg');
 let nemsg=document.getElementById('nerr-msg');
 let pemsg=document.getElementById('perr-msg');
 let inp=document.getElementsByClassName('focus');
+let t=document.getElementById('toggle');
+let container=document.getElementById('container');
+let inner=document.getElementById('inner');
+let label=document.getElementsByTagName('label');
+let para=document.getElementById('para');
 
 
 btn.addEventListener('click',(event)=>{
@@ -79,3 +84,40 @@ inp[i].addEventListener('blur',function(){
     this.classList.remove('inp');
 });
 }
+
+let isdark=true;
+t.addEventListener('click',()=>{
+    if(isdark==true){
+        container.style.backgroundColor="#eaeaea";
+        inner.style.backgroundColor="white";
+        inner.style.boxShadow="2px 2px 0px gray";
+        for(let i=0;i<inp.length;i++){
+            inp[i].style.backgroundColor="#eaeaea";
+            inp[i].style.color="black";
+            inp[i].classList.add('pcolor');
+        }
+        for(let i=0;i<label.length;i++){
+            label[i].style.color="black";
+        }
+        eye.style.color="black";
+        para.style.color="black";
+        isdark=false;
+    }
+    else{
+        container.style.backgroundColor="#2d3649";
+        inner.style.backgroundColor="#12151E";
+        for(let i=0;i<inp.length;i++){
+            inp[i].style.backgroundColor="#2d3649";
+            inp[i].style.color="white";
+            inp[i].classList.remove('pcolor');
+
+        }
+        for(let i=0;i<label.length;i++){
+            label[i].style.color="white";
+        }
+        eye.style.color="white";
+        para.style.color="white";
+
+        isdark=true;
+    }
+});
