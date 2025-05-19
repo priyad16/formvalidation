@@ -6,7 +6,7 @@
     border:1px solid black;
     height: 100vh;
     background-color: #2d3649;
-    
+    /* container: relative; */
 }
 #inner{
     /* border:1px solid black; */
@@ -14,7 +14,7 @@
     height: 260px;
     border-radius: 10px;
     margin:auto;
-    margin-top:40px;
+    margin-top:50px;
     background-color: #12151E;
     
 }
@@ -104,11 +104,57 @@ span{
 .inp{
     border:1px solid blue;
 }
-#toggle{
-    position: absolute;
-    right:10px;
-    top: 15px;
+#toggle {
+    border: 1px solid black;
+    height: 30px;
+    width: 60px;
+    margin-left: 440px;
+    margin-top: 20px;
+    /* position: absolute; */
+
+    /* right: 250px;
+    top: 15px; */
+    border-radius: 25px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+     */
+     
 }
+#toggle #sun {
+    font-size: 13px; 
+    margin-top: 16px;
+    margin-right: 255px; 
+    color: grey;
+}
+#toggle #moon{
+    font-size: 14px; 
+    margin-top: 16px;
+    margin-right:227px;
+    color: #12151E;
+
+}
+ #innert{
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 1px solid black;
+    position: absolute;
+    top: 23px;
+    right: 255px;
+    background-color: #12151E;
+
+ }
+
+.movel{
+    transform: translateX(-28px);
+    /* background-color: blue; */
+}
+.mover{
+    transform: translateX(2px);
+}
+
+
 .containerl{
     border:1px solid black;
     height: 100vh;

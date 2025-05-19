@@ -5,11 +5,13 @@ let emsg=document.getElementById('err-msg');
 let nemsg=document.getElementById('nerr-msg');
 let pemsg=document.getElementById('perr-msg');
 let inp=document.getElementsByClassName('focus');
-let t=document.getElementById('toggle');
+let t=document.getElementById('innert');
 let container=document.getElementById('container');
 let inner=document.getElementById('inner');
 let label=document.getElementsByTagName('label');
 let para=document.getElementById('para');
+let moon=document.getElementById('moon');
+let sun=document.getElementById('sun');
 
 
 btn.addEventListener('click',(event)=>{
@@ -101,6 +103,11 @@ t.addEventListener('click',()=>{
         }
         eye.style.color="black";
         para.style.color="black";
+        t.classList.add('movel');
+        t.style.backgroundColor="blue";
+        t.classList.remove('mover');
+        moon.style.color="grey";
+        sun.style.color="blue";
         isdark=false;
     }
     else{
@@ -117,7 +124,11 @@ t.addEventListener('click',()=>{
         }
         eye.style.color="white";
         para.style.color="white";
-
+        t.classList.add('mover');
+        t.style.backgroundColor="#12151E";
+        t.classList.remove('movel');
+        moon.style.color="#12151E";
+        sun.style.color="grey";
         isdark=true;
     }
 });
