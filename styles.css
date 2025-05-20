@@ -108,7 +108,7 @@ span{
     border: 1px solid black;
     height: 30px;
     width: 60px;
-    margin-left: 440px;
+    margin-right: 625px;
     margin-top: 20px;
     /* position: absolute; */
 
@@ -124,13 +124,13 @@ span{
 #toggle #sun {
     font-size: 13px; 
     margin-top: 16px;
-    margin-right: 255px; 
+    margin-right: 628px; 
     color: grey;
 }
 #toggle #moon{
     font-size: 14px; 
     margin-top: 16px;
-    margin-right:227px;
+    margin-right:600px;
     color: #12151E;
 
 }
@@ -141,13 +141,13 @@ span{
     border: 1px solid black;
     position: absolute;
     top: 23px;
-    right: 255px;
+    right: 630px;
     background-color: #12151E;
 
  }
 
 .movel{
-    transform: translateX(-28px);
+    transform: translateX(-27px);
     /* background-color: blue; */
 }
 .mover{
